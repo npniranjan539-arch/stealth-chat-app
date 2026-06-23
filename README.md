@@ -1,46 +1,88 @@
-📱 Stealth Chat App (WhatsApp Inspired):-
+# 📱 Stealth Chat App (WhatsApp Inspired)
 
-A WhatsApp-like chat application with a unique **Stealth Mode** feature that controls message delivery and visibility.
+A WhatsApp-inspired chat application built using HTML, CSS, and JavaScript. The project simulates real-world messaging behavior and includes a unique Stealth Mode feature that controls message delivery and visibility.
 
 🚀 Features:-
-- 💬 Send and receive messages. 
-- ✅ Single tick (message sent).  
-- ✅✅ Double tick (message delivered).  
-- 🔵 Blue tick (message seen).  
-- ⌨️ Typing indicator.  
-- 🟢 Online / Last seen status.  
-- 🕒 Message timestamps.
-- 
- 🕵️ Stealth Mode:-
-- Messages remain hidden from receiver.  
-- Only single tick is shown.  
-- No delivery or seen status.  
-- When turned OFF, all messages get delivered.  
 
-🛠 Tech Stack:-
+💬 Messaging Features
 
-- HTML.  
-- CSS.  
-- JavaScript.
-  
-🎯 Learning Outcomes:-
+* Send and receive messages
+* Auto reply simulation
+* Message timestamps
+* Typing indicator
+* Online / Last Seen status
 
-- DOM Manipulation.
-- State Management.  
-- UI/UX Design.  
-- Real-time behavior simulation. 
+ ✅ Message Status
 
-📂 Project Structure:-
-- index.html  
-- style.css  
-- script.js  
+* Single Tick (Sent)
+* Double Tick (Delivered)
+* Blue Tick (Seen)
 
-📌 Future Improvements:-
+ 🕵️ Stealth Mode
 
-- Backend integration (Node.js).
-- Real-time chat using WebSockets.  
-- User authentication.  
+* Messages remain hidden from receiver
+* Only single tick is shown
+* No delivery or seen status
+* Messages are delivered when Stealth Mode is disabled
 
-🙌 Author Name:-
-   NIDHI PATEL
+🛠 Message Management
 
+* Search messages
+* Edit messages
+* Delete messages
+* Copy messages
+* Forward messages
+* Pin / Unpin messages
+* Message reactions
+
+ 🎨 User Experience
+
+* Dark Mode
+* Toast notifications
+* Date separators
+* Auto scrolling
+* Empty state screen
+
+📊 Analytics & Storage
+
+* Unread message counter
+* Chat statistics
+* LocalStorage persistence
+* Export chat
+* Clear chat
+
+🛠 Tech Stack
+
+* HTML5
+* CSS3
+* JavaScript (ES6)
+* LocalStorage API
+
+ 🎯 Learning Outcomes
+
+* DOM Manipulation
+* Event Handling
+* State Management
+* Browser Storage
+* Dynamic UI Updates
+* UI/UX Design
+* Real-time Behavior Simulation
+
+ 📂 Project Structure
+
+index.html
+style.css
+script.js
+README.md
+
+ 📌 Future Improvements
+
+* Backend Integration (Node.js + Express)
+* Database Support (MongoDB)
+* Real-time Messaging (WebSockets)
+* User Authentication
+* File & Image Sharing
+
+ Author:-
+
+Nidhi Patel.
