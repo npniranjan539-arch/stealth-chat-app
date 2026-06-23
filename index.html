@@ -8,21 +8,92 @@
 
 <div class="phone">
 <div class="header">
-  <div>
-    Stealth Chat
-    <div id="status">online</div>
-  </div>
-  <button onclick="toggleStealth()">OFF</button>
+
+    <div>
+        <div class="title">
+            Stealth Chat
+        </div>
+
+        <div id="status">
+    <span class="online-dot"></span>
+    online
+</div>
+    </div>
+
+    <div>
+
+        <button onclick="toggleStealth()">
+            OFF
+        </button>
+
+        <button onclick="toggleTheme()">
+            🌙
+        </button>
+
+    </div>
+
 </div>
 
-  <div id="chatBox"></div>
+<div id="pinnedMessage">
+    No pinned message
+</div>
 
+<div id="stats">
+    Total: 0 | Sent: 0 | Replies: 0
+</div>
+
+<div id="unreadCounter">
+    Unread Messages: 0
+</div>
+
+<button id="exportBtn"
+        onclick="exportChat()">
+    Export Chat
+</button>
+<button onclick="clearChat()">
+    Clear Chat
+</button>
+<div class="searchArea">
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search messages..."
+        onkeyup="searchMessages()"
+    >
+</div>
+ <div id="chatBox">
+
+    <div id="emptyState">
+        💬 No messages yet
+        <br>
+        Start a conversation...
+    </div>
+
+</div>
+<div id="typingIndicator">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
   <div class="inputArea">
-    <input type="text" id="messageInput" placeholder="Type message...">
+   <input type="text"
+       id="messageInput"
+       placeholder="Type message..."
+       onkeydown="handleEnter(event)">
     <button class="sendBtn" onclick="sendMessage()">➤</button>
   </div>
 
 </div>
+<div id="contextMenu">
+  <div onclick="copyMessage()">Copy</div>
+  <div onclick="editMessage()">Edit</div>
+  <div onclick="deleteSelectedMessage()">Delete</div>
+  <div onclick="pinMessage()">Pin</div>
+  <div onclick="unpinMessage()">Unpin</div>
+  <div onclick="reactMessage()">React</div>
+  <div onclick="forwardMessage()">Forward</div>
+</div>
+<div id="toast"></div>
 
 <script src="script.js"></script>
 </body>
